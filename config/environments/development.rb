@@ -54,4 +54,7 @@ Rails.application.configure do
 
   # redis config
   config.session_store :redis_store, servers: ENV['REDIS_URL'], expire_in: 1.years
+
+  # better errors
+  BetterErrors::Middleware.allow_ip! "0.0.0.0/0"
 end
