@@ -25,6 +25,10 @@ gem 'redis-namespace'
 # view
 gem 'slim-rails'
 
+# constant
+gem 'dotenv-rails'
+gem 'config'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
