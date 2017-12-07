@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+gem 'whenever', require: false
+
 # database
 gem 'redis', '~> 3.0'
 gem 'redis-rails'
@@ -51,6 +53,13 @@ group :development do
   gem 'hirb-unicode'
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # Deploy
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano3-puma', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

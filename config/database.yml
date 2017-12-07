@@ -47,8 +47,10 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# TODO modify database username password host
 production:
   <<: *default
   database: rails5_1_template_project_production
-  username: rails5_1_template_project
-  password: <%= ENV['RAILS5_1_TEMPLATE_PROJECT_DATABASE_PASSWORD'] %>
+  username: root
+  password:
+  host: localhost
