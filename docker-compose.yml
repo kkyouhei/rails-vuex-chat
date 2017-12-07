@@ -1,11 +1,12 @@
+# TODO modify hoge
 version: '2'
 services:
   db:
     image: mysql:latest
     environment:
-      MYSQL_DATABASE: rails5_1_template_project_development
+      MYSQL_DATABASE: rails_vuex_chat_development
       MYSQL_ROOT_PASSWORD: fasjkdlw29
-      MYSQL_USER: rails5_1_template_project
+      MYSQL_USER: rails_vuex_chat_project
       MYSQL_PASSWORD: fasjkdl29
     volumes:
       - "./docker/mysql/config:/etc/mysql/conf.d"
@@ -24,6 +25,7 @@ services:
       - db # DB側のコンテナが出来上がってからwebを実行する
     ports:
       - "3000:3000" # ホストからゲストへポートフォワード
+      - "3035:3035"
     volumes:
       - .:/workdir # ソースコード変更したらDocker側も即反映されるように
     links:
