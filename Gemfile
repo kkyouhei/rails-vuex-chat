@@ -23,6 +23,7 @@ gem 'whenever', require: false
 gem 'redis', '~> 3.0'
 gem 'redis-rails'
 gem 'redis-namespace'
+gem 'annotator'
 
 # view
 gem 'slim-rails'
