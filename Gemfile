@@ -26,7 +26,7 @@ gem 'sorcery'
 gem 'redis', '~> 3.0'
 gem 'redis-rails'
 gem 'redis-namespace'
-gem 'annotator'
+gem 'annotate'
 
 # view
 gem 'slim-rails'
