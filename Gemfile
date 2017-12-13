@@ -19,6 +19,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'whenever', require: false
 
+# auth
+gem 'sorcery'
+
 # database
 gem 'redis', '~> 3.0'
 gem 'redis-rails'
