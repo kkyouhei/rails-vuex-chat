@@ -13,4 +13,8 @@
 
 class User < ApplicationRecord
   authenticates_with_sorcery!
+
+  has_many :room_users
+  has_many :rooms, through: :room_users
+  has_many :messages, inverse_of: :users
 end
