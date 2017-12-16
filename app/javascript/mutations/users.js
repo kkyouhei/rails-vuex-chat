@@ -12,5 +12,9 @@ export const mutations = {
 
   [types.USER_SEARCH_LOADED](state) {
     state.isLoading = false
+  },
+
+  [types.SET_USER_LIST](state, users) {
+    state.users = users
   }
 }

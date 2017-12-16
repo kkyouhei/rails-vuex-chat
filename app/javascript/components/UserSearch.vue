@@ -1,23 +1,19 @@
 <template>
   <div>
     <SearchField :action="searchUser" />
-    <p v-if="isLoading">loading...</p>
+    <UserList />
   </div>
 </template>
 
 <script>
 import {mapActions, mapState} from 'vuex'
 import SearchField from './SearchField.vue'
+import UserList from './UserList.vue'
 
 export default {
-  computed: {
-    ...mapState([
-      'isLoading'
-    ])
-  },
-
   components: {
-    SearchField
+    SearchField,
+    UserList
   },
 
   methods: {

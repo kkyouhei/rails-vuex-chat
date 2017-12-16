@@ -5,6 +5,6 @@ export const search = ({commit}, name) => {
   commit(types.USER_SEARCH_LOADING)
   UserAPI.search(name, (res) => {
     commit(types.USER_SEARCH_LOADED)
-    console.log(res)
+    commit(types.SET_USER_LIST, res.data)
   })
 }
