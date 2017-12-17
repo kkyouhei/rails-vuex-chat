@@ -7,3 +7,7 @@ h1 Rooms::Messages#index
         p = "発言者：#{message.user.name}"
         p = "メッセージ：#{message.message}"
         hr
+
+= form_for [@room, Message.new] do |f|
+  = f.text_field :message
+  = f.submit "送信"

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   end
 
   resources :rooms, only: [] do
-    resources :messages, only: [:index], controller: 'rooms/messages'
+    resources :messages, only: [:index, :create], controller: 'rooms/messages'
   end
 
   get 'login' => 'user_sessions#new', :as => :login
