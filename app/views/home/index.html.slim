@@ -1,5 +1,12 @@
 .header
   = link_to "ログアウト", logout_path
 
+- if @rooms.present?
+  ul
+    - @rooms.each do |room|
+      li
+        = link_to room.name, room_messages_path(room)
+    
+
 #user_search
 = javascript_pack_tag 'user_search'
