@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class HomeController < BaseController
   def index
     @rooms = current_user.rooms
   end

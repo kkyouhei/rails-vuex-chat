@@ -1,4 +1,4 @@
-class Rooms::MessagesController < ApplicationController
+class Rooms::MessagesController < BaseController
   before_action :set_room, only: [:index, :create]
 
   def index

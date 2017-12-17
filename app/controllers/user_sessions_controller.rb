@@ -1,4 +1,4 @@
-class UserSessionsController < ApplicationController
+class UserSessionsController < BaseController
   skip_before_action :require_login, except: [:destroy]
 
   def new
