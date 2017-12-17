@@ -1,0 +1,9 @@
+h1 Rooms::Messages#index
+
+- if @messages.present?
+  ul
+    - @messages.each do |message|
+      li
+        p = "発言者：#{message.user.name}"
+        p = "メッセージ：#{message.message}"
+        hr
