@@ -57,4 +57,7 @@ Rails.application.configure do
 
   # better errors
   BetterErrors::Middleware.allow_ip! "0.0.0.0/0"
+
+  # webpack dev server
+  config.x.webpacker[:dev_server_host] = "http://localhost:3035"
 end
